@@ -28,44 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.ListBoxDictionary = new System.Windows.Forms.ListBox();
             this.listBox2 = new System.Windows.Forms.ListBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.InputStaffKey = new System.Windows.Forms.TextBox();
+            this.InputStaffName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.SuspendLayout();
             // 
-            // listBox1
+            // ListBoxDictionary
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(12, 12);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(196, 420);
-            this.listBox1.TabIndex = 0;
+            this.ListBoxDictionary.FormattingEnabled = true;
+            this.ListBoxDictionary.Location = new System.Drawing.Point(12, 12);
+            this.ListBoxDictionary.Name = "ListBoxDictionary";
+            this.ListBoxDictionary.Size = new System.Drawing.Size(196, 420);
+            this.ListBoxDictionary.TabIndex = 0;
             // 
             // listBox2
             // 
             this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(230, 95);
+            this.listBox2.Location = new System.Drawing.Point(230, 90);
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(263, 342);
-            this.listBox2.TabIndex = 1;
+            this.listBox2.TabIndex = 3;
             // 
-            // textBox1
+            // InputStaffKey
             // 
-            this.textBox1.Location = new System.Drawing.Point(293, 15);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(118, 20);
-            this.textBox1.TabIndex = 2;
+            this.InputStaffKey.Location = new System.Drawing.Point(293, 15);
+            this.InputStaffKey.Name = "InputStaffKey";
+            this.InputStaffKey.Size = new System.Drawing.Size(118, 20);
+            this.InputStaffKey.TabIndex = 1;
+            this.InputStaffKey.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.InputStaffKey_KeyPress);
             // 
-            // textBox2
+            // InputStaffName
             // 
-            this.textBox2.Location = new System.Drawing.Point(293, 54);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(200, 20);
-            this.textBox2.TabIndex = 3;
+            this.InputStaffName.Location = new System.Drawing.Point(293, 54);
+            this.InputStaffName.Name = "InputStaffName";
+            this.InputStaffName.Size = new System.Drawing.Size(200, 20);
+            this.InputStaffName.TabIndex = 2;
             // 
             // label1
             // 
@@ -90,25 +92,38 @@
             this.textBox3.Location = new System.Drawing.Point(517, 12);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(141, 102);
-            this.textBox3.TabIndex = 6;
+            this.textBox3.TabIndex = 999;
+            this.textBox3.TabStop = false;
             this.textBox3.Text = "Alt + A (Open Admin)\r\nAlt + K (Clear Staff Key)\r\nAlt + V (Clear Staff Name)\r\nAlt " +
     "+ Q (Close)\r\n";
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Location = new System.Drawing.Point(0, 444);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(670, 22);
+            this.statusStrip1.TabIndex = 7;
+            this.statusStrip1.Text = "statusStrip1";
             // 
             // FormGeneral
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(670, 450);
+            this.ClientSize = new System.Drawing.Size(670, 466);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.InputStaffName);
+            this.Controls.Add(this.InputStaffKey);
             this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.ListBoxDictionary);
+            this.KeyPreview = true;
             this.Name = "FormGeneral";
             this.Text = "General Form";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.GeneralForm_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -116,13 +131,14 @@
 
         #endregion
 
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox ListBoxDictionary;
         private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox InputStaffKey;
+        private System.Windows.Forms.TextBox InputStaffName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.StatusStrip statusStrip1;
     }
 }
 

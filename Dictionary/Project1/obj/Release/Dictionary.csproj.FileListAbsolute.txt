@@ -1,0 +1,11 @@
+C:\Users\Administrator\Source\Repos\Malin-Space-Science-Systems\Dictionary\Project1\bin\Release\Project1.exe.config
+C:\Users\Administrator\Source\Repos\Malin-Space-Science-Systems\Dictionary\Project1\bin\Release\Project1.exe
+C:\Users\Administrator\Source\Repos\Malin-Space-Science-Systems\Dictionary\Project1\bin\Release\Project1.pdb
+C:\Users\Administrator\Source\Repos\Malin-Space-Science-Systems\Dictionary\Project1\obj\Release\Dictionary.csproj.AssemblyReference.cache
+C:\Users\Administrator\Source\Repos\Malin-Space-Science-Systems\Dictionary\Project1\obj\Release\Test.FormGeneral.resources
+C:\Users\Administrator\Source\Repos\Malin-Space-Science-Systems\Dictionary\Project1\obj\Release\Test.FormAdmin.resources
+C:\Users\Administrator\Source\Repos\Malin-Space-Science-Systems\Dictionary\Project1\obj\Release\Project1.Properties.Resources.resources
+C:\Users\Administrator\Source\Repos\Malin-Space-Science-Systems\Dictionary\Project1\obj\Release\Dictionary.csproj.GenerateResource.cache
+C:\Users\Administrator\Source\Repos\Malin-Space-Science-Systems\Dictionary\Project1\obj\Release\Dictionary.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Source\Repos\Malin-Space-Science-Systems\Dictionary\Project1\obj\Release\Project1.exe
+C:\Users\Administrator\Source\Repos\Malin-Space-Science-Systems\Dictionary\Project1\obj\Release\Project1.pdb

@@ -28,26 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.InputStaffIDKey = new System.Windows.Forms.TextBox();
+            this.InputStaffNameValue = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // textBox1
+            // InputStaffIDKey
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 29);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
+            this.InputStaffIDKey.Location = new System.Drawing.Point(12, 29);
+            this.InputStaffIDKey.Name = "InputStaffIDKey";
+            this.InputStaffIDKey.Size = new System.Drawing.Size(100, 20);
+            this.InputStaffIDKey.TabIndex = 0;
             // 
-            // textBox2
+            // InputStaffNameValue
             // 
-            this.textBox2.Location = new System.Drawing.Point(12, 98);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(148, 20);
-            this.textBox2.TabIndex = 1;
+            this.InputStaffNameValue.Location = new System.Drawing.Point(12, 98);
+            this.InputStaffNameValue.Name = "InputStaffNameValue";
+            this.InputStaffNameValue.Size = new System.Drawing.Size(148, 20);
+            this.InputStaffNameValue.TabIndex = 1;
             // 
             // label1
             // 
@@ -76,7 +76,7 @@
             this.textBox3.TabIndex = 4;
             this.textBox3.Text = "Alt + C (Create)\r\nAlt + U (Update)\r\nAlt + D (Delete)\r\nAlt + L (Close form)";
             // 
-            // AdministrationForm
+            // FormAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -84,9 +84,13 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Name = "AdministrationForm";
+            this.Controls.Add(this.InputStaffNameValue);
+            this.Controls.Add(this.InputStaffIDKey);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.KeyPreview = true;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "FormAdmin";
             this.Text = "Administration Form";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -95,8 +99,8 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox InputStaffIDKey;
+        private System.Windows.Forms.TextBox InputStaffNameValue;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox3;
