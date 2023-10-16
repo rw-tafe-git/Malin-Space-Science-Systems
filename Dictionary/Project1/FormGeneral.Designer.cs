@@ -97,7 +97,7 @@
             this.textBox3.TabIndex = 999;
             this.textBox3.TabStop = false;
             this.textBox3.Text = "Alt + A (Open Admin)\r\nAlt + K (Clear Staff Key)\r\nAlt + V (Clear Staff Name)\r\nAlt " +
-    "+ Q (Close)\r\n";
+    "+ Q (Close)";
             // 
             // statusStrip1
             // 
