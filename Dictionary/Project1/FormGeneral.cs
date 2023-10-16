@@ -41,6 +41,8 @@ namespace Test
         // 4.3.	Create a method to display the Dictionary data into a non-selectable display only list box(ie read only).
         private void DisplayDictionaryData()
         {
+            ListBoxDictionary.Items.Clear();
+
 
         }
 
