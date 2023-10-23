@@ -29,13 +29,15 @@
         private void InitializeComponent()
         {
             this.ListBoxDictionary = new System.Windows.Forms.ListBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.ListBoxFiltered = new System.Windows.Forms.ListBox();
             this.InputStaffKey = new System.Windows.Forms.TextBox();
             this.InputStaffName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.StatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // ListBoxDictionary
@@ -45,14 +47,16 @@
             this.ListBoxDictionary.Name = "ListBoxDictionary";
             this.ListBoxDictionary.Size = new System.Drawing.Size(196, 420);
             this.ListBoxDictionary.TabIndex = 0;
+            this.ListBoxDictionary.SelectedIndexChanged += new System.EventHandler(this.ListBox_SelectedIndexChanged);
             // 
-            // listBox2
+            // ListBoxFiltered
             // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(230, 90);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(263, 342);
-            this.listBox2.TabIndex = 3;
+            this.ListBoxFiltered.FormattingEnabled = true;
+            this.ListBoxFiltered.Location = new System.Drawing.Point(230, 90);
+            this.ListBoxFiltered.Name = "ListBoxFiltered";
+            this.ListBoxFiltered.Size = new System.Drawing.Size(263, 342);
+            this.ListBoxFiltered.TabIndex = 3;
+            this.ListBoxFiltered.SelectedIndexChanged += new System.EventHandler(this.ListBox_SelectedIndexChanged);
             // 
             // InputStaffKey
             // 
@@ -60,6 +64,7 @@
             this.InputStaffKey.Name = "InputStaffKey";
             this.InputStaffKey.Size = new System.Drawing.Size(118, 20);
             this.InputStaffKey.TabIndex = 1;
+            this.InputStaffKey.TextChanged += new System.EventHandler(this.InputStaffKey_TextChanged);
             this.InputStaffKey.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.InputStaffKey_KeyPress);
             // 
             // InputStaffName
@@ -68,6 +73,7 @@
             this.InputStaffName.Name = "InputStaffName";
             this.InputStaffName.Size = new System.Drawing.Size(200, 20);
             this.InputStaffName.TabIndex = 2;
+            this.InputStaffName.TextChanged += new System.EventHandler(this.InputStaffName_TextChanged);
             // 
             // label1
             // 
@@ -101,11 +107,19 @@
             // 
             // statusStrip1
             // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.StatusLabel});
             this.statusStrip1.Location = new System.Drawing.Point(0, 444);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(670, 22);
             this.statusStrip1.TabIndex = 7;
             this.statusStrip1.Text = "statusStrip1";
+            // 
+            // StatusLabel
+            // 
+            this.StatusLabel.Name = "StatusLabel";
+            this.StatusLabel.Size = new System.Drawing.Size(151, 17);
+            this.StatusLabel.Text = "Nothing Interesting Nearby";
             // 
             // FormGeneral
             // 
@@ -118,12 +132,15 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.InputStaffName);
             this.Controls.Add(this.InputStaffKey);
-            this.Controls.Add(this.listBox2);
+            this.Controls.Add(this.ListBoxFiltered);
             this.Controls.Add(this.ListBoxDictionary);
             this.KeyPreview = true;
             this.Name = "FormGeneral";
             this.Text = "General Form";
+            this.Load += new System.EventHandler(this.FormGeneral_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.GeneralForm_KeyDown);
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -132,13 +149,14 @@
         #endregion
 
         private System.Windows.Forms.ListBox ListBoxDictionary;
-        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.ListBox ListBoxFiltered;
         private System.Windows.Forms.TextBox InputStaffKey;
         private System.Windows.Forms.TextBox InputStaffName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel StatusLabel;
     }
 }
 

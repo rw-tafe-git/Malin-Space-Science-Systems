@@ -73,7 +73,7 @@
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(118, 112);
+            this.textBox3.Size = new System.Drawing.Size(118, 105);
             this.textBox3.TabIndex = 4;
             this.textBox3.Text = "Alt + C (Create)\r\nAlt + U (Update)\r\nAlt + D (Delete)\r\nAlt + L (Close form)";
             // 
@@ -93,6 +93,7 @@
             this.MinimizeBox = false;
             this.Name = "FormAdmin";
             this.Text = "Administration Form";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormAdmin_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -16,5 +16,25 @@ namespace Test
         {
             InitializeComponent();
         }
+
+        private void FormAdmin_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Alt && e.KeyCode == Keys.C)
+            {
+                this.Close();
+            }
+            if (e.Alt && e.KeyCode == Keys.U)
+            {
+                this.Close();
+            }
+            if (e.Alt && e.KeyCode == Keys.D)
+            {
+                this.Close();
+            }
+            if (e.Alt && e.KeyCode == Keys.L)
+            {
+                this.Close();
+            }
+        }
     }
 }
