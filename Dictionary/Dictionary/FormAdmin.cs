@@ -29,7 +29,7 @@ namespace Test
         {
             if (e.Alt && e.KeyCode == Keys.C)
             {
-                CloseAdminGUI();
+                
             }
             if (e.Alt && e.KeyCode == Keys.U)
             {
@@ -41,7 +41,7 @@ namespace Test
             }
             if (e.Alt && e.KeyCode == Keys.L)
             {
-                
+                CloseAdminGUI();
             }
         }
 

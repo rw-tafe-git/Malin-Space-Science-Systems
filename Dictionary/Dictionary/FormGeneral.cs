@@ -24,6 +24,9 @@ namespace Test
             InitializeComponent();
         }
 
+        // Create trace listener
+        TextWriterTraceListener traceListener = new TextWriterTraceListener("TraceFile.txt", "traceListener");
+
         // 4.1.	Create a Dictionary data structure with a TKey of type integer and a TValue of type string, name the new data structure “MasterFile”.
         public static Dictionary<int, string> MasterFile = new Dictionary<int, string>();
 
