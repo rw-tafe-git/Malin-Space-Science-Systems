@@ -74,6 +74,7 @@
             this.InputStaffName.Size = new System.Drawing.Size(200, 20);
             this.InputStaffName.TabIndex = 2;
             this.InputStaffName.TextChanged += new System.EventHandler(this.InputStaffName_TextChanged);
+            this.InputStaffName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.InputStaffName_KeyPress);
             // 
             // label1
             // 

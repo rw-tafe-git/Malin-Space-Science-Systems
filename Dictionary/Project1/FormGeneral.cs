@@ -3,14 +3,17 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Test
 {
@@ -55,26 +58,54 @@ namespace Test
         // 4.4.	Create a method to filter the Staff Name data from the Dictionary into a second filtered and selectable list box.This method must use a text box input and update as each character is entered.The list box must reflect the filtered data in real time.
         private void InputStaffName_TextChanged(object sender, EventArgs e)
         {
-            ListBoxFiltered.Items.Clear();
-            foreach (var kvp in MasterFile)
+            if (ListBoxFiltered.Focused)
+                return;
+
+            try
             {
-                if (kvp.Key.ToString().StartsWith(InputStaffName.Text))
+                /*ListBoxFiltered.Items.Clear();
+                foreach (var kvp in MasterFile)
                 {
-                    ListBoxFiltered.Items.Add(kvp.Key + " " + kvp.Value);
-                }
+                    if (kvp.Key.ToString().StartsWith(InputStaffName.Text))
+                    {
+                        ListBoxFiltered.Items.Add("[" + kvp.Key + ", " + kvp.Value + "]");
+                    }
+                }*/
+
+                string staffNameTextBox = InputStaffName.Text.ToLower();
+                var filteredList = MasterFile.Where(kvp => kvp.Value.ToLower().Contains(staffNameTextBox)).ToList();
+                ListBoxFiltered.DataSource = filteredList;
+            }
+            catch
+            {
+
             }
         }
 
         // 4.5.	Create a method to filter the Staff ID data from the Dictionary into the second filtered and selectable list box. This method must use a text box input and update as each number is entered.The list box must reflect the filtered data in real time.
         private void InputStaffKey_TextChanged(object sender, EventArgs e)
         {
-            ListBoxFiltered.Items.Clear();
-            foreach (var kvp in MasterFile)
+            if (ListBoxFiltered.Focused)
+                return;
+
+            try
             {
-                if (kvp.Key.ToString().StartsWith(InputStaffKey.Text))
+                /*ListBoxFiltered.Items.Clear();
+                foreach (var kvp in MasterFile)
                 {
-                    ListBoxFiltered.Items.Add(kvp.Key + " " + kvp.Value);
-                }
+                    if (kvp.Key.ToString().StartsWith(InputStaffKey.Text))
+                    {
+                        ListBoxFiltered.Items.Add("[" + kvp.Key + ", " + kvp.Value + "]");
+                    }
+                }*/
+
+                string staffIDTextBox = InputStaffKey.Text;
+                var filteredList = MasterFile.Where(kvp => kvp.Key.ToString().Contains(staffIDTextBox)).ToList();
+                ListBoxFiltered.DataSource = filteredList;
+            }
+            catch
+            {
+
             }
         }
 
@@ -95,13 +126,27 @@ namespace Test
         // 4.8.	Create a method for the filtered and selectable list box which will populate the two text boxes when a staff record is selected. Utilise the Tab and keyboard keys.
         private void ListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
+            ListBox currentListBox;
+            currentListBox = (ListBox)sender;
 
+            if (!currentListBox.Focused)
+                return;
+
+            if (currentListBox.SelectedItem != null)
+            {
+                string line = currentListBox.SelectedItem.ToString();
+                string[] splitLine = line.Split(',');
+                string staffID = splitLine[0].TrimStart('[');
+                string staffName = splitLine[1].TrimEnd(']').TrimStart(' ');
+                InputStaffKey.Text = staffID;
+                InputStaffName.Text = staffName;
+            }
         }
 
         // 4.9.	Create a method that will open the Admin GUI when the Alt + A keys are pressed. Ensure the General GUI sends the currently selected Staff ID and Staff Name to the Admin GUI for Update and Delete purposes and is opened as modal.Create modified logic to open the Admin GUI to Create a new user when the Staff ID 77 and the Staff Name is empty.Read the appropriate criteria in the Admin GUI for further information.
         private void OpenAdminGUI()
         {
-            FormAdmin formAdmin = new FormAdmin();
+            FormAdmin formAdmin = new FormAdmin(InputStaffKey.Text, InputStaffName.Text);
             formAdmin.Show();
             formAdmin.TopMost = true;
             formAdmin.Activate();
@@ -129,12 +174,23 @@ namespace Test
 
         private void InputStaffKey_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            /*if (char.IsControl(e.KeyChar) && char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }*/
+
+            if (!Regex.IsMatch(e.KeyChar.ToString(), @"[\d\b]"))
             {
                 e.Handled = true;
             }
+        }
 
-            //Add regex here later
+        private void InputStaffName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            /*if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }*/
         }
     }
 }
