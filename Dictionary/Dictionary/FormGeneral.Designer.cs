@@ -1,4 +1,4 @@
-﻿namespace Test
+﻿namespace Dictionary
 {
     partial class FormGeneral
     {
@@ -34,10 +34,7 @@
             this.InputStaffName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.StatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.statusStrip1.SuspendLayout();
+            this.KeyboardControls = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // ListBoxDictionary
@@ -94,41 +91,24 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Staff Name";
             // 
-            // textBox3
+            // KeyboardControls
             // 
-            this.textBox3.Location = new System.Drawing.Point(517, 12);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(141, 102);
-            this.textBox3.TabIndex = 999;
-            this.textBox3.TabStop = false;
-            this.textBox3.Text = "Alt + A (Open Admin)\r\nAlt + K (Clear Staff Key)\r\nAlt + V (Clear Staff Name)\r\nAlt " +
+            this.KeyboardControls.Location = new System.Drawing.Point(517, 12);
+            this.KeyboardControls.Multiline = true;
+            this.KeyboardControls.Name = "KeyboardControls";
+            this.KeyboardControls.ReadOnly = true;
+            this.KeyboardControls.Size = new System.Drawing.Size(141, 102);
+            this.KeyboardControls.TabIndex = 999;
+            this.KeyboardControls.TabStop = false;
+            this.KeyboardControls.Text = "Alt + A (Open Admin)\r\nAlt + K (Clear Staff Key)\r\nAlt + V (Clear Staff Name)\r\nAlt " +
     "+ Q (Close)";
-            // 
-            // statusStrip1
-            // 
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.StatusLabel});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 444);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(670, 22);
-            this.statusStrip1.TabIndex = 7;
-            this.statusStrip1.Text = "statusStrip1";
-            // 
-            // StatusLabel
-            // 
-            this.StatusLabel.Name = "StatusLabel";
-            this.StatusLabel.Size = new System.Drawing.Size(151, 17);
-            this.StatusLabel.Text = "Nothing Interesting Nearby";
             // 
             // FormGeneral
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(670, 466);
-            this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.textBox3);
+            this.ClientSize = new System.Drawing.Size(670, 446);
+            this.Controls.Add(this.KeyboardControls);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.InputStaffName);
@@ -140,8 +120,6 @@
             this.Text = "General Form";
             this.Load += new System.EventHandler(this.FormGeneral_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.GeneralForm_KeyDown);
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -155,9 +133,7 @@
         private System.Windows.Forms.TextBox InputStaffName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.ToolStripStatusLabel StatusLabel;
+        private System.Windows.Forms.TextBox KeyboardControls;
     }
 }
 

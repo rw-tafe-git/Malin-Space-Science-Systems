@@ -15,7 +15,7 @@ using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
-namespace Test
+namespace Dictionary
 {
     public partial class FormGeneral : Form
     {

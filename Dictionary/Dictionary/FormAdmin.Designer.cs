@@ -1,4 +1,4 @@
-﻿namespace Test
+﻿namespace Dictionary
 {
     partial class FormAdmin
     {
@@ -32,13 +32,14 @@
             this.InputStaffNameValue = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.KeyboardControls = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // InputStaffIDKey
             // 
             this.InputStaffIDKey.Location = new System.Drawing.Point(12, 29);
             this.InputStaffIDKey.Name = "InputStaffIDKey";
+            this.InputStaffIDKey.ReadOnly = true;
             this.InputStaffIDKey.Size = new System.Drawing.Size(100, 20);
             this.InputStaffIDKey.TabIndex = 0;
             // 
@@ -67,15 +68,16 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Staff ID Key";
             // 
-            // textBox3
+            // KeyboardControls
             // 
-            this.textBox3.Location = new System.Drawing.Point(190, 13);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(118, 105);
-            this.textBox3.TabIndex = 4;
-            this.textBox3.Text = "Alt + C (Create)\r\nAlt + U (Update)\r\nAlt + D (Delete)\r\nAlt + L (Close form)";
+            this.KeyboardControls.Location = new System.Drawing.Point(190, 13);
+            this.KeyboardControls.Multiline = true;
+            this.KeyboardControls.Name = "KeyboardControls";
+            this.KeyboardControls.ReadOnly = true;
+            this.KeyboardControls.Size = new System.Drawing.Size(118, 105);
+            this.KeyboardControls.TabIndex = 4;
+            this.KeyboardControls.TabStop = false;
+            this.KeyboardControls.Text = "Alt + C (Create)\r\nAlt + U (Update)\r\nAlt + D (Delete)\r\nAlt + L (Close form)";
             // 
             // FormAdmin
             // 
@@ -83,7 +85,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(322, 137);
             this.ControlBox = false;
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.KeyboardControls);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.InputStaffNameValue);
@@ -106,6 +108,6 @@
         private System.Windows.Forms.TextBox InputStaffNameValue;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox KeyboardControls;
     }
 }
