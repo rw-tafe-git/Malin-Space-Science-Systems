@@ -183,6 +183,23 @@ namespace Dictionary
             }
         }
 
+        private void ListBox_EnterFocus(object sender, EventArgs e)
+		{
+			ListBox currentListBox;
+			currentListBox = (ListBox)sender;
+
+			if (currentListBox.SelectedItem != null)
+			{
+				string line = currentListBox.SelectedItem.ToString();
+				string[] splitLine = line.Split(',');
+				string staffID = splitLine[0].TrimStart('[');
+				string staffName = splitLine[1].TrimEnd(']').TrimStart(' ');
+				currentListBox.Focus();
+				InputStaffKey.Text = staffID;
+				InputStaffName.Text = staffName;
+			}
+		}
+
         // 4.9.	Create a method that will open the Admin GUI when the Alt + A keys are pressed. Ensure the General GUI sends the currently selected Staff ID and Staff Name to the Admin GUI for Update and Delete purposes and is opened as modal.Create modified logic to open the Admin GUI to Create a new user when the Staff ID 77 and the Staff Name is empty.Read the appropriate criteria in the Admin GUI for further information.
         private void OpenAdminGUI()
         {

@@ -1,20 +1,42 @@
-LoadDictionaryData: 2ms, 26065 Ticks
+LoadDictionaryData: 2ms, 27333 Ticks
 ---------------------
-InputStaffKey_TextChanged: 4ms, 47953 Ticks
+InputStaffName_TextChanged: 36ms, 362481 Ticks
 ---------------------
-InputStaffName_TextChanged: 1ms, 16519 Ticks
+InputStaffName_TextChanged: 4ms, 48398 Ticks
 ---------------------
-SaveDictionary: 2ms, 21014 Ticks
+InputStaffName_TextChanged: 3ms, 36918 Ticks
 ---------------------
-DeleteStaffRecord: 2ms, 21014 Ticks
+InputStaffName_TextChanged: 3ms, 35064 Ticks
 ---------------------
-InputStaffName_TextChanged: 1ms, 11176 Ticks
+SaveDictionary: 2ms, 20526 Ticks
 ---------------------
-InputStaffName_TextChanged: 3ms, 38201 Ticks
+DeleteStaffRecord: 2ms, 20526 Ticks
 ---------------------
-InputStaffName_TextChanged: 1ms, 17494 Ticks
+SaveDictionary: 2ms, 23316 Ticks
 ---------------------
-InputStaffName_TextChanged: 1ms, 12403 Ticks
+CreateStaffRecord: 2ms, 23316 Ticks
 ---------------------
-DeleteStaffRecord: 974ms, 9749949 Ticks
+SaveDictionary: 2ms, 20114 Ticks
+---------------------
+UpdateStaffRecord: 2ms, 20114 Ticks
+---------------------
+InputStaffName_TextChanged: 14ms, 142005 Ticks
+---------------------
+InputStaffName_TextChanged: 5ms, 52421 Ticks
+---------------------
+InputStaffName_TextChanged: 4ms, 44075 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 11769 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 11674 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 11277 Ticks
+---------------------
+SaveDictionary: 2ms, 20465 Ticks
+---------------------
+DeleteStaffRecord: 2ms, 20465 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 10367 Ticks
+---------------------
+InputStaffName_TextChanged: 0ms, 9771 Ticks
 ---------------------

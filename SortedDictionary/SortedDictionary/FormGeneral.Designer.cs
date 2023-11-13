@@ -54,6 +54,7 @@
             this.ListBoxFiltered.Size = new System.Drawing.Size(263, 342);
             this.ListBoxFiltered.TabIndex = 3;
             this.ListBoxFiltered.SelectedIndexChanged += new System.EventHandler(this.ListBox_SelectedIndexChanged);
+            this.ListBoxFiltered.Enter += new System.EventHandler(this.ListBox_EnterFocus);
             // 
             // InputStaffKey
             // 
