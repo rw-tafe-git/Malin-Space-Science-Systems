@@ -1,6 +1,2 @@
-LoadDictionaryData: 2ms, 24253 Ticks
----------------------
-InputStaffName_TextChanged: 13ms, 134598 Ticks
----------------------
-InputStaffName_TextChanged: 5ms, 51189 Ticks
+LoadDictionaryData: 2ms, 25274 Ticks
 ---------------------
