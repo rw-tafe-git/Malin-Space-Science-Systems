@@ -24,8 +24,9 @@ namespace Dictionary
             InitializeComponent();
         }
 
-        // Create trace listener
-        TextWriterTraceListener traceListener = new TextWriterTraceListener("TraceFile.txt", "traceListener");
+        // Create trace listener and stopwatch
+        TextWriterTraceListener traceListener = new TextWriterTraceListener(File.Create("TraceFile.txt"));
+        Stopwatch stopWatch;
 
         // 4.1.	Create a Dictionary data structure with a TKey of type integer and a TValue of type string, name the new data structure “MasterFile”.
         public static Dictionary<int, string> MasterFile = new Dictionary<int, string>();
@@ -33,8 +34,20 @@ namespace Dictionary
         // 4.2.	Create a method that will read the data from the .csv file into the Dictionary data structure when the GUI loads.
         private void FormGeneral_Load(object sender, EventArgs e)
         {
+            Trace.Listeners.Add(traceListener);
+            stopWatch = new Stopwatch();
+
+            LoadDictionaryData();
+            DisplayDictionaryData();
+        }
+
+        private void LoadDictionaryData()
+        {
             MasterFile.Clear();
             string filePath = "MalinStaffNamesV2.csv";
+
+            stopWatch.Restart();
+
             string[] lines = File.ReadAllLines(filePath);
             foreach (string line in lines)
             {
@@ -43,8 +56,11 @@ namespace Dictionary
                 string staffName = splitLine[1];
                 MasterFile.Add(staffID, staffName);
             }
-            
-            DisplayDictionaryData();
+
+            stopWatch.Stop();
+
+            Trace.WriteLine("LoadDictionaryData: " + stopWatch.ElapsedMilliseconds + "ms, " + stopWatch.ElapsedTicks + " Ticks\n---------------------");
+            Trace.Flush();
         }
 
         // 4.3.	Create a method to display the Dictionary data into a non-selectable display only list box(ie read only).
@@ -66,6 +82,8 @@ namespace Dictionary
 
             try
             {
+                stopWatch.Restart();
+
                 /*ListBoxFiltered.Items.Clear();
                 foreach (var kvp in MasterFile)
                 {
@@ -78,6 +96,11 @@ namespace Dictionary
                 string staffNameTextBox = InputStaffName.Text.ToLower();
                 var filteredList = MasterFile.Where(kvp => kvp.Value.ToLower().Contains(staffNameTextBox)).ToList();
                 ListBoxFiltered.DataSource = filteredList;
+
+                stopWatch.Stop();
+
+                Trace.WriteLine("InputStaffName_TextChanged: " + stopWatch.ElapsedMilliseconds + "ms, " + stopWatch.ElapsedTicks + " Ticks\n---------------------");
+                Trace.Flush();
             }
             catch
             {
@@ -93,6 +116,8 @@ namespace Dictionary
 
             try
             {
+                stopWatch.Restart();
+
                 /*ListBoxFiltered.Items.Clear();
                 foreach (var kvp in MasterFile)
                 {
@@ -105,6 +130,11 @@ namespace Dictionary
                 string staffIDTextBox = InputStaffKey.Text;
                 var filteredList = MasterFile.Where(kvp => kvp.Key.ToString().Contains(staffIDTextBox)).ToList();
                 ListBoxFiltered.DataSource = filteredList;
+
+                stopWatch.Stop();
+
+                Trace.WriteLine("InputStaffKey_TextChanged: " + stopWatch.ElapsedMilliseconds + "ms, " + stopWatch.ElapsedTicks + " Ticks\n---------------------");
+                Trace.Flush();
             }
             catch
             {
@@ -160,18 +190,30 @@ namespace Dictionary
             if (e.Alt && e.KeyCode == Keys.A)
             {
                 OpenAdminGUI();
+				
+				e.Handled = true;
+				e.SuppressKeyPress = true;
             }
             if (e.Alt && e.KeyCode == Keys.K)
             {
                 ClearStaffKey();
+				
+				e.Handled = true;
+				e.SuppressKeyPress = true;
             }
             if (e.Alt && e.KeyCode == Keys.V)
             {
                 ClearStaffName();
+				
+				e.Handled = true;
+				e.SuppressKeyPress = true;
             }
             if (e.Alt && e.KeyCode == Keys.Q)
             {
                 Application.Exit();
+				
+				e.Handled = true;
+				e.SuppressKeyPress = true;
             }
         }
 

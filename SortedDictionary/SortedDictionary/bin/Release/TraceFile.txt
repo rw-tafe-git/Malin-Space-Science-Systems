@@ -1,0 +1,162 @@
+LoadDictionaryData: 15ms, 153138 Ticks
+---------------------
+InputStaffKey_TextChanged: 5ms, 54090 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 16501 Ticks
+---------------------
+SaveDictionary: 2ms, 27422 Ticks
+---------------------
+DeleteStaffRecord: 2ms, 27422 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 14370 Ticks
+---------------------
+InputStaffName_TextChanged: 4ms, 46867 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 12053 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 11935 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 13529 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 13836 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 18445 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 15785 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 16691 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 16319 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 16847 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 16855 Ticks
+---------------------
+InputStaffName_TextChanged: 26ms, 265226 Ticks
+---------------------
+InputStaffName_TextChanged: 34ms, 347197 Ticks
+---------------------
+InputStaffKey_TextChanged: 2ms, 23656 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 13506 Ticks
+---------------------
+InputStaffKey_TextChanged: 4ms, 40369 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 12111 Ticks
+---------------------
+InputStaffKey_TextChanged: 1ms, 13589 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 13180 Ticks
+---------------------
+InputStaffKey_TextChanged: 1ms, 14590 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 11957 Ticks
+---------------------
+InputStaffKey_TextChanged: 1ms, 13177 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 12948 Ticks
+---------------------
+InputStaffKey_TextChanged: 1ms, 14806 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 12370 Ticks
+---------------------
+InputStaffKey_TextChanged: 1ms, 17929 Ticks
+---------------------
+InputStaffName_TextChanged: 2ms, 20537 Ticks
+---------------------
+InputStaffKey_TextChanged: 1ms, 15865 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 12027 Ticks
+---------------------
+InputStaffKey_TextChanged: 1ms, 18642 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 14489 Ticks
+---------------------
+InputStaffKey_TextChanged: 1ms, 14306 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 11658 Ticks
+---------------------
+InputStaffKey_TextChanged: 1ms, 13582 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 13325 Ticks
+---------------------
+InputStaffKey_TextChanged: 1ms, 14355 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 11919 Ticks
+---------------------
+InputStaffKey_TextChanged: 1ms, 13015 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 13211 Ticks
+---------------------
+InputStaffKey_TextChanged: 1ms, 16284 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 12412 Ticks
+---------------------
+InputStaffKey_TextChanged: 1ms, 16268 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 13298 Ticks
+---------------------
+SaveDictionary: 2ms, 23275 Ticks
+---------------------
+CreateStaffRecord: 2ms, 23275 Ticks
+---------------------
+SaveDictionary: 2ms, 22753 Ticks
+---------------------
+UpdateStaffRecord: 2ms, 22753 Ticks
+---------------------
+InputStaffName_TextChanged: 12ms, 123293 Ticks
+---------------------
+InputStaffName_TextChanged: 5ms, 51972 Ticks
+---------------------
+InputStaffName_TextChanged: 2ms, 20761 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 14922 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 15644 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 15511 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 14841 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 13371 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 13190 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 17313 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 13993 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 13368 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 13756 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 15938 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 13962 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 13553 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 15310 Ticks
+---------------------
+InputStaffName_TextChanged: 4ms, 40678 Ticks
+---------------------
+InputStaffName_TextChanged: 14ms, 148113 Ticks
+---------------------
+InputStaffName_TextChanged: 33ms, 334067 Ticks
+---------------------
+InputStaffName_TextChanged: 29ms, 292807 Ticks
+---------------------
+InputStaffName_TextChanged: 7ms, 75056 Ticks
+---------------------
+InputStaffName_TextChanged: 5ms, 58223 Ticks
+---------------------
+InputStaffName_TextChanged: 2ms, 22689 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 13852 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 14015 Ticks
+---------------------
+InputStaffName_TextChanged: 36ms, 368691 Ticks
+---------------------
+InputStaffKey_TextChanged: 30ms, 304439 Ticks
+---------------------

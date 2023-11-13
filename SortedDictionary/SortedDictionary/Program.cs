@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SortedDictionary
+namespace Dictionary
 {
     internal static class Program
     {
@@ -16,7 +16,7 @@ namespace SortedDictionary
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new FormGeneral());
         }
     }
 }

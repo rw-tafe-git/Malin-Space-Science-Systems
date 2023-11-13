@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34009.444
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortedDictionary", "SortedDictionary\SortedDictionary.csproj", "{BB132418-AD28-4D98-AAEB-F2336062E7FC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortedDictionary", "SortedDictionary\SortedDictionary.csproj", "{FBCA6EBC-813B-4D23-8C14-414C4E42C1F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BB132418-AD28-4D98-AAEB-F2336062E7FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BB132418-AD28-4D98-AAEB-F2336062E7FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BB132418-AD28-4D98-AAEB-F2336062E7FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BB132418-AD28-4D98-AAEB-F2336062E7FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBCA6EBC-813B-4D23-8C14-414C4E42C1F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBCA6EBC-813B-4D23-8C14-414C4E42C1F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBCA6EBC-813B-4D23-8C14-414C4E42C1F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBCA6EBC-813B-4D23-8C14-414C4E42C1F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {6B6FCEEE-FC85-4053-9721-8AC4447FE714}
+		SolutionGuid = {DA4F0743-BA37-4B66-981E-C52414BFFC5E}
 	EndGlobalSection
 EndGlobal

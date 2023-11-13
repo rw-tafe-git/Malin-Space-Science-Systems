@@ -9,3 +9,14 @@ C:\Users\Administrator\Source\Repos\Malin-Space-Science-Systems\Dictionary\Proje
 C:\Users\Administrator\Source\Repos\Malin-Space-Science-Systems\Dictionary\Project1\obj\Release\Dictionary.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\Source\Repos\Malin-Space-Science-Systems\Dictionary\Project1\obj\Release\Project1.exe
 C:\Users\Administrator\Source\Repos\Malin-Space-Science-Systems\Dictionary\Project1\obj\Release\Project1.pdb
+C:\Users\Administrator\Source\Repos\Malin-Space-Science-Systems\Dictionary\Dictionary\bin\Release\Dictionary.exe.config
+C:\Users\Administrator\Source\Repos\Malin-Space-Science-Systems\Dictionary\Dictionary\bin\Release\Dictionary.exe
+C:\Users\Administrator\Source\Repos\Malin-Space-Science-Systems\Dictionary\Dictionary\bin\Release\Dictionary.pdb
+C:\Users\Administrator\Source\Repos\Malin-Space-Science-Systems\Dictionary\Dictionary\obj\Release\Dictionary.csproj.AssemblyReference.cache
+C:\Users\Administrator\Source\Repos\Malin-Space-Science-Systems\Dictionary\Dictionary\obj\Release\Dictionary.FormGeneral.resources
+C:\Users\Administrator\Source\Repos\Malin-Space-Science-Systems\Dictionary\Dictionary\obj\Release\Dictionary.FormAdmin.resources
+C:\Users\Administrator\Source\Repos\Malin-Space-Science-Systems\Dictionary\Dictionary\obj\Release\Dictionary.Properties.Resources.resources
+C:\Users\Administrator\Source\Repos\Malin-Space-Science-Systems\Dictionary\Dictionary\obj\Release\Dictionary.csproj.GenerateResource.cache
+C:\Users\Administrator\Source\Repos\Malin-Space-Science-Systems\Dictionary\Dictionary\obj\Release\Dictionary.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Source\Repos\Malin-Space-Science-Systems\Dictionary\Dictionary\obj\Release\Dictionary.exe
+C:\Users\Administrator\Source\Repos\Malin-Space-Science-Systems\Dictionary\Dictionary\obj\Release\Dictionary.pdb

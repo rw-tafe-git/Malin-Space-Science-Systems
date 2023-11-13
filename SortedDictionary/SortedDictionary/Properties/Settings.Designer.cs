@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SortedDictionary.Properties
+namespace Dictionary.Properties
 {
 
 

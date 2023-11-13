@@ -1,0 +1,11 @@
+C:\Users\Administrator\Source\Repos\Malin-Space-Science-Systems\SortedDictionary\SortedDictionary\bin\Release\SortedDictionary.exe.config
+C:\Users\Administrator\Source\Repos\Malin-Space-Science-Systems\SortedDictionary\SortedDictionary\bin\Release\SortedDictionary.exe
+C:\Users\Administrator\Source\Repos\Malin-Space-Science-Systems\SortedDictionary\SortedDictionary\bin\Release\SortedDictionary.pdb
+C:\Users\Administrator\Source\Repos\Malin-Space-Science-Systems\SortedDictionary\SortedDictionary\obj\Release\SortedDictionary.csproj.AssemblyReference.cache
+C:\Users\Administrator\Source\Repos\Malin-Space-Science-Systems\SortedDictionary\SortedDictionary\obj\Release\Dictionary.FormGeneral.resources
+C:\Users\Administrator\Source\Repos\Malin-Space-Science-Systems\SortedDictionary\SortedDictionary\obj\Release\Dictionary.FormAdmin.resources
+C:\Users\Administrator\Source\Repos\Malin-Space-Science-Systems\SortedDictionary\SortedDictionary\obj\Release\SortedDictionary.Properties.Resources.resources
+C:\Users\Administrator\Source\Repos\Malin-Space-Science-Systems\SortedDictionary\SortedDictionary\obj\Release\SortedDictionary.csproj.GenerateResource.cache
+C:\Users\Administrator\Source\Repos\Malin-Space-Science-Systems\SortedDictionary\SortedDictionary\obj\Release\SortedDictionary.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Source\Repos\Malin-Space-Science-Systems\SortedDictionary\SortedDictionary\obj\Release\SortedDictionary.exe
+C:\Users\Administrator\Source\Repos\Malin-Space-Science-Systems\SortedDictionary\SortedDictionary\obj\Release\SortedDictionary.pdb
