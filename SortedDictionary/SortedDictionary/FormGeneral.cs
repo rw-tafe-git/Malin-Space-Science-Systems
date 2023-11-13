@@ -19,6 +19,13 @@ namespace Dictionary
 {
     public partial class FormGeneral : Form
     {
+		// Student Riley, id 30002737, Date: 09/10/2023
+        // Assessment Task 3
+
+        /// <summary>
+        /// Sorted Dictionary General Form
+        /// </summary>
+		
         public FormGeneral()
         {
             InitializeComponent();
@@ -28,10 +35,10 @@ namespace Dictionary
         TextWriterTraceListener traceListener = new TextWriterTraceListener(File.Create("TraceFile.txt"));
         Stopwatch stopWatch;
 
-        // 4.1.	Create a Dictionary data structure with a TKey of type integer and a TValue of type string, name the new data structure “MasterFile”.
+        // 6.1.	Create a SortedDictionary data structure with a TKey of type integer and a TValue of type string, name the new data structure “MasterFile”.
         public static SortedDictionary<int, string> MasterFile = new SortedDictionary<int, string>();
 
-        // 4.2.	Create a method that will read the data from the .csv file into the Dictionary data structure when the GUI loads.
+        // 6.2.	Create a method that will read the data from the .csv file into the SortedDictionary data structure when the GUI loads.
         private void FormGeneral_Load(object sender, EventArgs e)
         {
             Trace.Listeners.Add(traceListener);
@@ -63,7 +70,7 @@ namespace Dictionary
             Trace.Flush();
         }
 
-        // 4.3.	Create a method to display the Dictionary data into a non-selectable display only list box(ie read only).
+        // 6.3.	Create a method to display the SortedDictionary data into a non-selectable display only list box (ie read only).
         private void DisplayDictionaryData()
         {
             ListBoxDictionary.Items.Clear();
@@ -74,7 +81,7 @@ namespace Dictionary
             }
         }
 
-        // 4.4.	Create a method to filter the Staff Name data from the Dictionary into a second filtered and selectable list box.This method must use a text box input and update as each character is entered.The list box must reflect the filtered data in real time.
+        // 6.4.	Create a method to filter the Staff Name data from the SortedDictionary into a second filtered and selectable list box. This method must use a text box input and update as each character is entered. The list box must reflect the filtered data in real time.
         private void InputStaffName_TextChanged(object sender, EventArgs e)
         {
             if (ListBoxFiltered.Focused)
@@ -108,7 +115,7 @@ namespace Dictionary
             }
         }
 
-        // 4.5.	Create a method to filter the Staff ID data from the Dictionary into the second filtered and selectable list box. This method must use a text box input and update as each number is entered.The list box must reflect the filtered data in real time.
+        // 6.5.	Create a method to filter the Staff ID data from the SortedDictionary into the second filtered and selectable list box. This method must use a text box input and update as each number is entered. The list box must reflect the filtered data in real time.
         private void InputStaffKey_TextChanged(object sender, EventArgs e)
         {
             if (ListBoxFiltered.Focused)
@@ -142,21 +149,21 @@ namespace Dictionary
             }
         }
 
-        // 4.6.	Create a method for the Staff Name text box which will clear the contents and place the focus into the Staff Name text box. Utilise a keyboard shortcut.
+        // 6.6.	Create a method for the Staff Name text box which will clear the contents and place the focus into the Staff Name text box. Utilise a keyboard shortcut.
         private void ClearStaffName()
         {
             InputStaffName.Text = string.Empty;
             InputStaffName.Focus();
         }
 
-        // 4.7.	Create a method for the Staff ID text box which will clear the contents and place the focus into the text box. Utilise a keyboard shortcut.
+        // 6.7.	Create a method for the Staff ID text box which will clear the contents and place the focus into the text box. Utilise a keyboard shortcut.
         private void ClearStaffKey()
         {
             InputStaffKey.Text = string.Empty;
             InputStaffKey.Focus();
         }
 
-        // 4.8.	Create a method for the filtered and selectable list box which will populate the two text boxes when a staff record is selected. Utilise the Tab and keyboard keys.
+        // 6.8.	Create a method for the filtered and selectable list box which will populate the two text boxes when a staff record is selected. Utilise the Tab and keyboard keys.
         private void ListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             ListBox currentListBox;
@@ -176,7 +183,7 @@ namespace Dictionary
             }
         }
 
-        // 4.9.	Create a method that will open the Admin GUI when the Alt + A keys are pressed. Ensure the General GUI sends the currently selected Staff ID and Staff Name to the Admin GUI for Update and Delete purposes and is opened as modal.Create modified logic to open the Admin GUI to Create a new user when the Staff ID 77 and the Staff Name is empty.Read the appropriate criteria in the Admin GUI for further information.
+        // 6.9.	Create a method that will open the Admin GUI when the Alt + A keys are pressed. Ensure the General GUI sends the currently selected Staff ID and Staff Name to the Admin GUI for Update and Delete purposes and is opened as modal. Create modified logic to open the Admin GUI to Create a new user when the Staff ID 77 and the Staff Name is empty. Read the appropriate criteria in the Admin GUI for further information.
         private void OpenAdminGUI()
         {
             FormAdmin formAdmin = new FormAdmin(InputStaffKey.Text, InputStaffName.Text);

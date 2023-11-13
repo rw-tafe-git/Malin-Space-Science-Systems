@@ -17,9 +17,14 @@ namespace Dictionary
 {
     public partial class FormAdmin : Form
     {
-        Stopwatch stopWatch;
+		// Student Riley, id 30002737, Date: 09/10/2023
+        // Assessment Task 3
 
-        public FormAdmin(string id, string name)
+        /// <summary>
+        /// Sorted Dictionary Admin Form
+        /// </summary>
+		
+		public FormAdmin(string id, string name)
         {
             InitializeComponent();
 
@@ -27,15 +32,18 @@ namespace Dictionary
 
             stopWatch = new Stopwatch();
         }
+		
+		// Create stopwatch
+        Stopwatch stopWatch;
 
-        // 5.2.	Create a method that will receive the Staff ID from the General GUI and then populate text boxes with the related data. 
+        // 7.2.	Create a method that will receive the Staff ID from the General GUI and then populate text boxes with the related data. 
         private void PopulateForm(string id, string name)
         {
             InputStaffIDKey.Text = id;
             InputStaffNameValue.Text = name;
         }
 
-        // 5.3.	Create a method that will create a new Staff ID and input the staff name from the related text box.The Staff ID must be unique starting with 77xxxxxxx while the staff name may be duplicated. The new staff member must be added to the Dictionary data structure.
+        // 7.3.	Create a method that will create a new Staff ID and input the staff name from the related text box. The Staff ID must be unique starting with 77xxxxxxx while the staff name may be duplicated. The new staff member must be added to the SortedDictionary data structure.
         private void CreateStaffRecord()
         {
             Random random = new Random();
@@ -74,7 +82,7 @@ namespace Dictionary
             Trace.Flush();
         }
 
-        // 5.4.	Create a method that will Update the name of the current Staff ID.
+        // 7.4.	Create a method that will Update the name of the current Staff ID.
         private void UpdateStaffRecord()
         {
             stopWatch.Restart();
@@ -105,7 +113,7 @@ namespace Dictionary
             Trace.Flush();
         }
 
-        // 5.5.	Create a method that will Remove the current Staff ID and clear the text boxes.
+        // 7.5.	Create a method that will Remove the current Staff ID and clear the text boxes.
         private void DeleteStaffRecord()
         {
             stopWatch.Restart();
@@ -139,7 +147,7 @@ namespace Dictionary
             Trace.Flush();
         }
 
-        // 5.6.	Create a method that will save changes to the csv file, this method should be called as the Admin GUI closes.
+        // 7.6.	Create a method that will save changes to the csv file, this method should be called as the Admin GUI closes.
         private void SaveDictionary()
         {
             stopWatch.Restart();
@@ -158,7 +166,7 @@ namespace Dictionary
             Trace.Flush();
         }
 
-        // 5.7.	Create a method that will close the Admin GUI when the Alt + L keys are pressed.*/
+        // 7.7.	Create a method that will close the Admin GUI when the Alt + L keys are pressed.
         private void CloseAdminGUI()
         {
             this.Close();

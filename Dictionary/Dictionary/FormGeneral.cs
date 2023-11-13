@@ -19,6 +19,13 @@ namespace Dictionary
 {
     public partial class FormGeneral : Form
     {
+		// Student Riley, id 30002737, Date: 09/10/2023
+        // Assessment Task 3
+
+        /// <summary>
+        /// Dictionary Search
+        /// </summary>
+		
         public FormGeneral()
         {
             InitializeComponent();

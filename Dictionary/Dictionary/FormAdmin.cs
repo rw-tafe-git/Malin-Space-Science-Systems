@@ -17,7 +17,12 @@ namespace Dictionary
 {
     public partial class FormAdmin : Form
     {
-        Stopwatch stopWatch;
+        // Student Riley, id 30002737, Date: 09/10/2023
+        // Assessment Task 3
+
+        /// <summary>
+        /// Dictionary Admin Form
+        /// </summary>
 
         public FormAdmin(string id, string name)
         {
@@ -27,6 +32,9 @@ namespace Dictionary
 
             stopWatch = new Stopwatch();
         }
+
+        // Create stopwatch
+        Stopwatch stopWatch;
 
         // 5.2.	Create a method that will receive the Staff ID from the General GUI and then populate text boxes with the related data. 
         private void PopulateForm(string id, string name)
