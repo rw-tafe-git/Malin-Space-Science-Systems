@@ -33,6 +33,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.KeyboardControls = new System.Windows.Forms.TextBox();
+            this.StatusStrip = new System.Windows.Forms.StatusStrip();
+            this.StatusStripLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.StatusStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // InputStaffIDKey
@@ -79,12 +82,29 @@
             this.KeyboardControls.TabStop = false;
             this.KeyboardControls.Text = "Alt + C (Create)\r\nAlt + U (Update)\r\nAlt + D (Delete)\r\nAlt + L (Close form)";
             // 
+            // StatusStrip
+            // 
+            this.StatusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.StatusStripLabel});
+            this.StatusStrip.Location = new System.Drawing.Point(0, 137);
+            this.StatusStrip.Name = "StatusStrip";
+            this.StatusStrip.Size = new System.Drawing.Size(322, 22);
+            this.StatusStrip.TabIndex = 5;
+            this.StatusStrip.Text = "statusStrip1";
+            // 
+            // StatusStripLabel
+            // 
+            this.StatusStripLabel.Name = "StatusStripLabel";
+            this.StatusStripLabel.Size = new System.Drawing.Size(10, 17);
+            this.StatusStripLabel.Text = " ";
+            // 
             // FormAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(322, 137);
+            this.ClientSize = new System.Drawing.Size(322, 159);
             this.ControlBox = false;
+            this.Controls.Add(this.StatusStrip);
             this.Controls.Add(this.KeyboardControls);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -97,6 +117,8 @@
             this.Name = "FormAdmin";
             this.Text = "Administration Form";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormAdmin_KeyDown);
+            this.StatusStrip.ResumeLayout(false);
+            this.StatusStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -109,5 +131,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox KeyboardControls;
+        private System.Windows.Forms.StatusStrip StatusStrip;
+        private System.Windows.Forms.ToolStripStatusLabel StatusStripLabel;
     }
 }

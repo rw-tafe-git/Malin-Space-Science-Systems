@@ -46,105 +46,120 @@ namespace Dictionary
         // 7.3.	Create a method that will create a new Staff ID and input the staff name from the related text box. The Staff ID must be unique starting with 77xxxxxxx while the staff name may be duplicated. The new staff member must be added to the SortedDictionary data structure.
         private void CreateStaffRecord()
         {
-            Random random = new Random();
-            int newId;
+            var confirmResult = MessageBox.Show("Create new staff record?", "Confirm Create", MessageBoxButtons.YesNo);
 
-            stopWatch.Restart();
-
-            try
+            if (confirmResult == DialogResult.Yes)
             {
-                do
-                    newId = random.Next(770000000, 779999999);
-                while (FormGeneral.MasterFile.ContainsKey(newId));
+                Random random = new Random();
+                int newId;
 
-                if (!string.IsNullOrEmpty(InputStaffNameValue.Text))
+                stopWatch.Restart();
+
+                try
                 {
-                    FormGeneral.MasterFile.Add(newId, InputStaffNameValue.Text);
-                    SaveDictionary();
-					
-					InputStaffIDKey.Text = newId.ToString();
-					
-                    MessageBox.Show("New staff id added");
+                    do
+                        newId = random.Next(770000000, 779999999);
+                    while (FormGeneral.MasterFile.ContainsKey(newId));
+
+                    if (!string.IsNullOrEmpty(InputStaffNameValue.Text))
+                    {
+                        FormGeneral.MasterFile.Add(newId, InputStaffNameValue.Text);
+                        SaveDictionary();
+
+                        InputStaffIDKey.Text = newId.ToString();
+
+                        StatusStripLabel.Text = "New staff record added";
+                    }
+                    else
+                    {
+                        StatusStripLabel.Text = "Failed to add new staff record";
+                    }
                 }
-                else
+                catch
                 {
-                    MessageBox.Show("Failed to add new staff id");
+                    StatusStripLabel.Text = "Failed to add new staff record";
                 }
-            }
-            catch
-            {
-                MessageBox.Show("Failed to add new staff id");
-            }
 
-            stopWatch.Stop();
+                stopWatch.Stop();
 
-            Trace.WriteLine("CreateStaffRecord: " + stopWatch.ElapsedMilliseconds + "ms, " + stopWatch.ElapsedTicks + " Ticks\n---------------------");
-            Trace.Flush();
+                Trace.WriteLine("CreateStaffRecord: " + stopWatch.ElapsedMilliseconds + "ms, " + stopWatch.ElapsedTicks + " Ticks\n---------------------");
+                Trace.Flush();
+            }
         }
 
         // 7.4.	Create a method that will Update the name of the current Staff ID.
         private void UpdateStaffRecord()
         {
-            stopWatch.Restart();
+            var confirmResult = MessageBox.Show("Update current staff record?", "Confirm Update", MessageBoxButtons.YesNo);
 
-            try
+            if (confirmResult == DialogResult.Yes)
             {
-                if (FormGeneral.MasterFile.ContainsKey(int.Parse(InputStaffIDKey.Text)))
+                stopWatch.Restart();
+
+                try
                 {
-                    int key = int.Parse(InputStaffIDKey.Text);
-                    FormGeneral.MasterFile[key] = InputStaffNameValue.Text;
-                    SaveDictionary();
+                    if (FormGeneral.MasterFile.ContainsKey(int.Parse(InputStaffIDKey.Text)))
+                    {
+                        int key = int.Parse(InputStaffIDKey.Text);
+                        FormGeneral.MasterFile[key] = InputStaffNameValue.Text;
+                        SaveDictionary();
 
-                    MessageBox.Show("Staff record updated");
+                        StatusStripLabel.Text = "Staff record updated";
+                    }
+                    else
+                    {
+                        StatusStripLabel.Text = "Failed to update staff record";
+                    }
                 }
-                else
+                catch
                 {
-                    MessageBox.Show("Failed to update staff record");
+                    StatusStripLabel.Text = "Failed to update staff record";
                 }
-            }
-            catch
-            {
-                MessageBox.Show("Failed to update staff record");
-            }
 
-            stopWatch.Stop();
+                stopWatch.Stop();
 
-            Trace.WriteLine("UpdateStaffRecord: " + stopWatch.ElapsedMilliseconds + "ms, " + stopWatch.ElapsedTicks + " Ticks\n---------------------");
-            Trace.Flush();
+                Trace.WriteLine("UpdateStaffRecord: " + stopWatch.ElapsedMilliseconds + "ms, " + stopWatch.ElapsedTicks + " Ticks\n---------------------");
+                Trace.Flush();
+            }
         }
 
         // 7.5.	Create a method that will Remove the current Staff ID and clear the text boxes.
         private void DeleteStaffRecord()
         {
-            stopWatch.Restart();
+            var confirmResult = MessageBox.Show("Delete current staff record?", "Confirm Delete", MessageBoxButtons.YesNo);
 
-            try
+            if (confirmResult == DialogResult.Yes)
             {
-                if (FormGeneral.MasterFile.ContainsKey(int.Parse(InputStaffIDKey.Text)))
-                {
-                    int key = int.Parse(InputStaffIDKey.Text);
-                    FormGeneral.MasterFile.Remove(key);
-                    SaveDictionary();
-					
-					InputStaffIDKey.Text = string.Empty;
-					InputStaffNameValue.Text = string.Empty;
-					
-                    MessageBox.Show("Staff record deleted");
-                }
-                else
-                {
-                    MessageBox.Show("Failed to delete staff record");
-                }
-            }
-            catch
-            {
-                MessageBox.Show("Failed to delete staff record");
-            }
+                stopWatch.Restart();
 
-            stopWatch.Stop();
+                try
+                {
+                    if (FormGeneral.MasterFile.ContainsKey(int.Parse(InputStaffIDKey.Text)))
+                    {
+                        int key = int.Parse(InputStaffIDKey.Text);
+                        FormGeneral.MasterFile.Remove(key);
+                        SaveDictionary();
 
-            Trace.WriteLine("DeleteStaffRecord: " + stopWatch.ElapsedMilliseconds + "ms, " + stopWatch.ElapsedTicks + " Ticks\n---------------------");
-            Trace.Flush();
+                        InputStaffIDKey.Text = string.Empty;
+                        InputStaffNameValue.Text = string.Empty;
+
+                        StatusStripLabel.Text = "Staff record deleted";
+                    }
+                    else
+                    {
+                        StatusStripLabel.Text = "Failed to delete staff record";
+                    }
+                }
+                catch
+                {
+                    StatusStripLabel.Text = "Failed to delete staff record";
+                }
+
+                stopWatch.Stop();
+
+                Trace.WriteLine("DeleteStaffRecord: " + stopWatch.ElapsedMilliseconds + "ms, " + stopWatch.ElapsedTicks + " Ticks\n---------------------");
+                Trace.Flush();
+            }
         }
 
         // 7.6.	Create a method that will save changes to the csv file, this method should be called as the Admin GUI closes.

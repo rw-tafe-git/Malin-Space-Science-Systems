@@ -9,3 +9,4 @@ C:\Users\Administrator\Source\Repos\Malin-Space-Science-Systems\SortedDictionary
 C:\Users\Administrator\Source\Repos\Malin-Space-Science-Systems\SortedDictionary\SortedDictionary\obj\Release\SortedDictionary.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\Source\Repos\Malin-Space-Science-Systems\SortedDictionary\SortedDictionary\obj\Release\SortedDictionary.exe
 C:\Users\Administrator\Source\Repos\Malin-Space-Science-Systems\SortedDictionary\SortedDictionary\obj\Release\SortedDictionary.pdb
+C:\Users\Administrator\Source\Repos\Malin-Space-Science-Systems\SortedDictionary\SortedDictionary\obj\Release\SortedDictionary.csproj.SuggestedBindingRedirects.cache

@@ -20,3 +20,4 @@ C:\Users\Administrator\Source\Repos\Malin-Space-Science-Systems\Dictionary\Dicti
 C:\Users\Administrator\Source\Repos\Malin-Space-Science-Systems\Dictionary\Dictionary\obj\Release\Dictionary.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\Source\Repos\Malin-Space-Science-Systems\Dictionary\Dictionary\obj\Release\Dictionary.exe
 C:\Users\Administrator\Source\Repos\Malin-Space-Science-Systems\Dictionary\Dictionary\obj\Release\Dictionary.pdb
+C:\Users\Administrator\Source\Repos\Malin-Space-Science-Systems\Dictionary\Dictionary\obj\Release\Dictionary.csproj.SuggestedBindingRedirects.cache
