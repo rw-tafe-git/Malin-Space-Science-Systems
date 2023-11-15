@@ -1,0 +1,62 @@
+LoadDictionaryData: 2ms, 23021 Ticks
+---------------------
+InputStaffKey_TextChanged: 8ms, 86041 Ticks
+---------------------
+InputStaffName_TextChanged: 2ms, 21941 Ticks
+---------------------
+InputStaffKey_TextChanged: 2ms, 23786 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 14776 Ticks
+---------------------
+InputStaffKey_TextChanged: 1ms, 11386 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 12134 Ticks
+---------------------
+InputStaffName_TextChanged: 5ms, 53925 Ticks
+---------------------
+InputStaffName_TextChanged: 5ms, 52977 Ticks
+---------------------
+SaveDictionary: 1ms, 16767 Ticks
+---------------------
+DeleteStaffRecord: 1ms, 16767 Ticks
+---------------------
+InputStaffName_TextChanged: 4ms, 49252 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 10733 Ticks
+---------------------
+SaveDictionary: 1ms, 18910 Ticks
+---------------------
+CreateStaffRecord: 1ms, 18910 Ticks
+---------------------
+InputStaffName_TextChanged: 19ms, 194675 Ticks
+---------------------
+InputStaffName_TextChanged: 6ms, 62438 Ticks
+---------------------
+InputStaffName_TextChanged: 6ms, 63381 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 12061 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 13844 Ticks
+---------------------
+InputStaffKey_TextChanged: 57ms, 577375 Ticks
+---------------------
+InputStaffName_TextChanged: 9ms, 90450 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 10823 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 17960 Ticks
+---------------------
+SaveDictionary: 1ms, 17383 Ticks
+---------------------
+UpdateStaffRecord: 1ms, 17383 Ticks
+---------------------
+InputStaffName_TextChanged: 4ms, 46696 Ticks
+---------------------
+InputStaffName_TextChanged: 4ms, 40817 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 12128 Ticks
+---------------------
+InputStaffName_TextChanged: 4ms, 40951 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 11831 Ticks
+---------------------

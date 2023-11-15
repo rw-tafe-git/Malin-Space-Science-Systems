@@ -1,0 +1,34 @@
+LoadDictionaryData: 8ms, 83724 Ticks
+---------------------
+InputStaffKey_TextChanged: 5ms, 51497 Ticks
+---------------------
+InputStaffName_TextChanged: 1ms, 15868 Ticks
+---------------------
+SaveDictionary: 2ms, 23389 Ticks
+---------------------
+DeleteStaffRecord: 2ms, 23389 Ticks
+---------------------
+InputStaffName_TextChanged: 4ms, 49324 Ticks
+---------------------
+InputStaffName_TextChanged: 11ms, 113022 Ticks
+---------------------
+InputStaffName_TextChanged: 13ms, 131243 Ticks
+---------------------
+InputStaffName_TextChanged: 15ms, 152848 Ticks
+---------------------
+SaveDictionary: 2ms, 22373 Ticks
+---------------------
+CreateStaffRecord: 2ms, 22373 Ticks
+---------------------
+SaveDictionary: 1ms, 19750 Ticks
+---------------------
+UpdateStaffRecord: 1ms, 19750 Ticks
+---------------------
+InputStaffName_TextChanged: 20ms, 207525 Ticks
+---------------------
+InputStaffName_TextChanged: 7ms, 75491 Ticks
+---------------------
+InputStaffName_TextChanged: 2ms, 25163 Ticks
+---------------------
+InputStaffName_TextChanged: 7ms, 70099 Ticks
+---------------------
